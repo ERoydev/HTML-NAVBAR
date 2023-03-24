@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+        content="width=device-width", initial-scale=1.0">
+        <title>Scroll Website</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!-- Navbar section-->
+        </div>  
+        <nav class="navbar">
+            <div class="right-col">
+                <img src="images/play.png" id="icon">
+            </div>  
+            <div class="navbar__container">
+                <a href="#home" id="navbar__logo">Checkmate</a>
+                <div class="navbar__toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="navbar__menu">
+                    <li class="navbar__item">
+                        <a href="#home" class="navbar__links" id="home-page">Home</a>      
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#about" class="navbar__links" id="about-page">About</a>      
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#servives" class="navbar__links" id="services-page">Services</a>      
+                    </li>
+                    <li class="navbar__btn">
+                        <a href="#sign-up" class="button" id="signup">Sign up</a>      
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Hero section -->
+        <div class="hero" id="home">
+            <div class="hero__container">
+                <h1 class="hero__heading">Choose your <span>colors</span></h1>
+                <p class="hero__description">Unlimited Possibilities</p>
+                <button class="main__btn"><a href="#">Explore</a></button>
+            </div>
+        </div> 
+
+        <!-- About Section-->
+        <div class="main" id="about">
+            <div class="main__container">
+                <div class="main__img--container">
+                    <div class="main__img--card">ICON</div>
+                </div>
+                <div class="main__content">
+                    <h1>What do we do?</h1>
+                    <h2>We help bussinesses scale</h2>
+                    <p>Schedule a call to learn more about our services</p>
+                    <button class="main__btn"><a href="#">Schedule Call</a></button>
+                </div>              
+            </div>
+        </div>
+        <audio id="mySong">
+            <source src="media/Dollar Trap Beat - Aggresive Beat.mp3" type="audio/mp3">
+        </audio>
+
+        <script>
+            var mySong = document.getElementById("mySong");
+            var icon = document.getElementById("icon");
+
+            icon.onclick = function(){
+                if(mySong.paused){
+                    mySong.play();
+                    icon.src="images/pause.png";
+                }else{
+                    mySong.pause();
+                    icon.src="images/play.png";
+                }
+            }
+        </script>
+
+        <script src="app.js"></script>
+    </body>
+</html>
